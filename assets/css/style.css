@@ -63,6 +63,9 @@ body {
     background-size: cover;
 }
 
+/*************************************/
+/*         avencer header top        */
+/*************************************/
 .logo_image_img {
     display: block;
     margin: 45px auto;
@@ -82,6 +85,9 @@ body {
     right: 65px;
 }
 
+/*************************************/
+/*        avencer header body        */
+/*************************************/
 .header_text__text {
     text-align: center;
     font-family: "Montserrat-Light";
@@ -112,6 +118,10 @@ body {
     font-size: 20px;
 }
 
+
+/*************************************/
+/*             home button           */
+/*************************************/
 .button {
     text-align: center;
 }
@@ -129,6 +139,10 @@ body {
     color: #fefefe;
 }
 
+
+/*************************************/
+/*          home button hover        */
+/*************************************/
 .home_button:hover,
 .home_button:active {
     background-color: #faae53;
@@ -141,6 +155,11 @@ body {
     box-shadow: none;
 }
 
+
+
+/*************************************/
+/*      home button border style     */
+/*************************************/
 .home_button:before {
     content: "";
     position: absolute;
@@ -189,6 +208,10 @@ body {
     color: #faae53;
 }
 
+
+/*************************************/
+/*    page title border top style    */
+/*************************************/
 .page_title:before {
     content: "";
     position: absolute;
@@ -204,17 +227,23 @@ body {
 /*                            about content                                */
 /*-------------------------------------------------------------------------*/
 
-.section_about {
+.about_wrapper {
     padding-bottom: 165px;
     padding-top: 150px
 }
 
+/*************************************/
+/*            about image            */
+/*************************************/
 .about_image {
     margin-top: 95px;
     float: right;
     padding-right: 60px;
 }
 
+/*************************************/
+/*             about text            */
+/*************************************/
 
 .about_text {
     margin-top: 100px;
@@ -222,30 +251,8 @@ body {
     padding-left: 60px;
 }
 
-.about_text_header {
-    font-family: "Montserrat-Medium";
-    font-size: 32px;
-    letter-spacing: 0.8px;
-    position: relative;
-}
-
-.section_about .page_title {
+.about_wrapper .page_title {
     padding-right: 130px;
-}
-
-.about_text_header:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    border-top: 2px solid #faae53;
-    border-left: 2px solid #faae53;
-    height: 25px;
-    width: 25px;
-}
-
-.header_color {
-    color: #faae53;
 }
 
 .content_and_button {
@@ -262,6 +269,10 @@ body {
     margin-bottom: 23px;
 }
 
+
+/*************************************/
+/*           about button            */
+/*************************************/
 .btn_small_in_about {
     font-family: "Montserrat-Regular";
     font-size: 14px;
@@ -276,6 +287,10 @@ body {
 
 }
 
+
+/*************************************/
+/*         about button hover        */
+/*************************************/
 .btn_small_in_about:hover,
 .btn_small_in_about:active {
     background-color: #faae53;
@@ -290,6 +305,10 @@ body {
     outline: none;
 }
 
+
+/*************************************/
+/*    about button border style      */
+/*************************************/
 .btn_small_in_about:before {
     content: "";
     position: absolute;
@@ -319,32 +338,26 @@ body {
 /*-------------------------------------------------------------------------*/
 
 
-.section_service_avencer {
+.service_avencer_wrapper {
     background-color: #453e69;
     padding-bottom: 200px;
     padding-top: 200px;
 }
 
-.section_service_avencer .page_title {
+.service_avencer_wrapper .page_title {
     max-width: 320px;
 }
 
+
+/*************************************/
+/*            service logo           */
+/*************************************/
 .service_logo {
     height: 132px;
     width: 132px;
     border: 2px solid #f3f3f3;
     border-radius: 50%;
     padding: 35px;
-}
-
-#web-design {
-    padding: 0px 10px;
-}
-
-
-#fast-delivery {
-	position: absolute;
-	left: 120px;
 }
 
 .service_of_avencer h3 {
@@ -373,28 +386,46 @@ body {
     font-family: "Montserrat-Light";
 }
 
-.service_itmes_right {
+/*************************************/
+/* service avencer some extra style  */
+/*************************************/
+
+.extra_style_web_design {
+    padding: 0px 10px;
+}
+
+
+.service_logo .fast-delivery {
+    position: absolute;
+    left: 120px;
+}
+
+.service_itmes_padding_left {
     margin-top: 55px;
     padding-left: 90px;
 }
 
 
-.service_itmes_left {
-	padding-right: 90px;
+.service_itmes_padding_right {
+    padding-right: 90px;
 }
+
 /*-------------------------------------------------------------------------*/
 /*                           section portfolio                             */
 /*-------------------------------------------------------------------------*/
 
-.section_portfolio {
+.portfolio_wrapper {
     padding: 200px 0 142px;
 }
 
-.section_portfolio .page_title {
+.portfolio_wrapper .page_title {
     max-width: 235px;
 }
 
-.portfolio_content .row .col-sm-4 {
+/*************************************/
+/*     portfolio custom col-sm-4     */
+/*************************************/
+.portfolio_content .col-sm-4 {
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -411,6 +442,9 @@ body {
     height: auto;
 }
 
+/*************************************/
+/*      portfolio hover content      */
+/*************************************/
 .hover_content {
     position: absolute;
     top: 0;
@@ -418,6 +452,7 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
     background: rgba(250, 174, 83, 0.8);
 }
@@ -426,12 +461,13 @@ body {
     opacity: 0.8;
 }
 
-.hover_content h4, 
+.hover_content h4,
 .hover_content p {
     font-family: "Montserrat-Medium";
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
     color: #29253d;
@@ -453,7 +489,7 @@ body {
 /*-------------------------------------------------------------------------*/
 
 
-.section_meet_avencer_experts {
+.meet_expert_wrapper {
     padding: 150px 0;
     background-image: url(../img/team%20background.png);
     background-position: center;
@@ -461,57 +497,42 @@ body {
     background-size: cover;
 }
 
-.section_meet_avencer_experts .page_title {
+.meet_expert_wrapper .page_title {
     max-width: 380px;
 }
 
-.expert_meet {
-    
-}
 
-
-
-
-#expert_meet_2 {
+.expert_meet_person_2 {
     margin-top: 60px;
 }
 
-#expert_meet_3 {
+.expert_meet_person_3 {
     margin-top: 120px;
 }
 
-
-
-
+/*************************************/
+/*         expert meet hover         */
+/*************************************/
 .expert_meet_content {
     position: relative;
-   
 }
 
 .expert_meet_hover {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background: rgba(250, 174, 83, 0.9);
-	padding-left: 40px;
-	height: 100%;
-	padding-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background: rgba(250, 174, 83, 0.9);
+    padding-left: 40px;
+    height: 100%;
+    padding-top: 30px;
 }
 
 .expert_meet_content:hover .expert_meet_hover {
     opacity: 0.9;
 }
-
-
-
-
-
-
-
-
-
 
 
 .expert_meet_hover h4,
@@ -528,12 +549,12 @@ body {
 }
 
 .expert_meet_hover p:before {
-	content: "";
-	position: absolute;
-	width: 40px;
-	border: 1px solid #ffffff;
-	left: 0;
-	top: -10px;
+    content: "";
+    position: absolute;
+    width: 40px;
+    border: 1px solid #ffffff;
+    left: 0;
+    top: -10px;
 }
 
 .expert_meet_hover p {
@@ -541,10 +562,13 @@ body {
     margin-top: 60px;
 }
 
+/*************************************/
+/*     social icon releted style     */
+/*************************************/
 .social_icon {
-	list-style: none;
-	padding-left: 0;
-	margin-top: 110px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 110px;
 }
 
 .social_icon li {
@@ -557,19 +581,23 @@ body {
     border-radius: 50%;
     padding: 2px 10px;
     margin-right: 10px;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
 .social_icon li a {
     text-decoration: none;
     color: #2f293e;
-}
-.fb_left {
-	padding-left: 3px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
-.instagram_left {
-	margin-left: -1px;
+.extra_fb_padd_left {
+    padding-left: 3px;
+}
+
+.extra_instagram_margin_left {
+    margin-left: -1px;
 }
 
 .social_icon li:hover {
@@ -577,5 +605,10 @@ body {
     cursor: pointer;
 }
 
+.social_icon li:hover a {
+    color: #fafafa;
+}
 
-
+/*-------------------------------------------------------------------------*/
+/*                     reuseable header top with span                      */
+/*-------------------------------------------------------------------------*/
