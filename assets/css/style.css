@@ -1,0 +1,498 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------------------*/
+/*                                 fonts                                   */
+/*-------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../font/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Montserrat-Light.otf') format('opentype'),
+        url('../font/Montserrat-Light.woff') format('woff'),
+        url('../font/Montserrat-Light.ttf') format('truetype'),
+        url('../font/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../font/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Montserrat-Medium.otf') format('opentype'),
+        url('../font/Montserrat-Medium.woff') format('woff'),
+        url('../font/Montserrat-Medium.ttf') format('truetype'),
+        url('../font/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Montserrat-Regular.otf') format('opentype'),
+        url('../font/Montserrat-Regular.woff') format('woff'),
+        url('../font/Montserrat-Regular.ttf') format('truetype'),
+        url('../font/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------------------------------------------------------------------------*/
+/*                               border                                    */
+/*-------------------------------------------------------------------------*/
+
+body {
+    background-color: #29253d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fefefe;
+}
+
+/*-------------------------------------------------------------------------*/
+/*                            section header                               */
+/*-------------------------------------------------------------------------*/
+
+.avencer_header {
+    background-image: url(../img/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_image_img {
+    display: block;
+    margin: 45px auto;
+}
+
+.logo_img {
+    max-width: 230px;
+}
+
+.nav_bar_logo {
+    max-width: 62px;
+}
+
+.nav_bar {
+    position: absolute;
+    top: 88px;
+    right: 65px;
+}
+
+.header_text__text {
+    text-align: center;
+    font-family: "Montserrat-Light";
+    color: #fefefe;
+    font-size: 42px;
+    letter-spacing: 0.8px;
+    margin-top: 176px;
+    margin-bottom: 60px;
+}
+
+
+.avencer_name {
+    font-family: "Montserrat-Medium";
+    color: #faae53;
+    font-size: 52px;
+}
+
+.banner_text {
+    max-width: 608.51px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.banner_text__text {
+    text-align: center;
+    font-family: "Montserrat-Light";
+    color: #fefefe;
+    font-size: 20px;
+}
+
+.button {
+    text-align: center;
+}
+
+.home_button {
+    font-family: "Montserrat-Regular";
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 255px;
+    position: relative;
+    padding: 18px 20px;
+    letter-spacing: 1.6px;
+    color: #fefefe;
+}
+
+.home_button:hover,
+.home_button:active {
+    background-color: #faae53;
+    color: #fefefe;
+}
+
+.home_button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.home_button:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    height: 45px;
+    width: 45px;
+    z-index: 1;
+    border-left: 2px solid #faae53;
+    border-top: 2px solid #faae53;
+}
+
+.home_button:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 2px solid #faae53;
+    border-right: 2px solid #faae53;
+    z-index: 1;
+    height: 45px;
+    width: 45px;
+}
+
+.page_scroll {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*                     reuseable header top with span                      */
+/*-------------------------------------------------------------------------*/
+
+
+.avencer_top_header_text {
+    margin-bottom: 120px;
+}
+
+.avencer_header_text {
+    font-family: "Montserrat-Medium";
+    font-size: 32px;
+    letter-spacing: 0.8px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.avencer_header_text span {
+    color: #faae53;
+}
+
+/*-------------------------------------------------------------------------*/
+/*                            about content                                */
+/*-------------------------------------------------------------------------*/
+
+.section_about {
+    padding-bottom: 165px;
+    padding-top: 150px
+}
+
+.about_image {
+    margin-top: 95px;
+    float: right;
+}
+
+.about_imgae_img {
+    max-width: 648px;
+    padding-right: 60px;
+}
+
+
+.about_text {
+    max-width: 470.45px;
+    margin-top: 100px;
+    float: left;
+    padding-left: 60px;
+}
+
+.about_text_header {
+    font-family: "Montserrat-Medium";
+    font-size: 32px;
+    letter-spacing: 0.8px;
+    position: relative;
+}
+
+.about_text_header:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 2px solid #faae53;
+    border-left: 2px solid #faae53;
+    height: 25px;
+    width: 25px;
+}
+
+.header_color {
+    color: #faae53;
+}
+
+.content_and_button {
+    font-family: "Montserrat-Light";
+    padding-left: 25px;
+}
+
+.about_text_p {
+    font-size: 16px;
+}
+
+.about_text_p:first-child {
+    margin-top: 65px;
+    margin-bottom: 23px;
+}
+
+.btn_small_in_about {
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    background-color: transparent;
+    color: #fefefe;
+    border: none;
+    border-radius: 0;
+    padding: 13px 47.5px;
+    position: relative;
+    margin-top: 60px;
+
+}
+
+.btn_small_in_about:hover,
+.btn_small_in_about:active {
+    background-color: #faae53;
+    color: #fefefe;
+    border-radius: 0;
+    border: 0;
+}
+
+.btn_small_in_about:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.btn_small_in_about:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 33px;
+    width: 33px;
+    border-top: 2px solid #faae53;
+    border-left: 2px solid #faae53;
+
+}
+
+
+.btn_small_in_about:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    height: 33px;
+    width: 33px;
+    border-bottom: 2px solid #faae53;
+    border-right: 2px solid #faae53;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*                       section service avencer                           */
+/*-------------------------------------------------------------------------*/
+
+
+.section_service_avencer {
+    background-color: #453e69;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+#service_avencer_header {
+    max-width: 335px;
+}
+
+.avencer_header_text:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    border-top: 4px solid #faae53;
+    border-left: 4px solid #faae53;
+    height: 25px;
+    width: 25px;
+}
+
+.service_logo {
+    height: 132px;
+    width: 132px;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    padding: 35px;
+}
+
+#web-design {
+    padding: 0px 10px;
+}
+
+
+#fast-delivery {
+    max-width: 77px;
+    height: 66px;
+    position: absolute;
+    left: 43px;
+}
+
+.service_of_avencer h3 {
+    font-family: "Montserrat-Medium";
+    font-size: 32px;
+    letter-spacing: 0.8px;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+.service_of_avencer {
+    transition: all 0.5s;
+}
+
+.service_of_avencer:hover .service_logo {
+    border-color: #faae53;
+}
+
+.service_of_avencer:hover h3 {
+    color: #faae53;
+}
+
+.service_of_avencer p {
+    font-size: 16px;
+    font-family: "Montserrat-Light";
+}
+
+#service_left {
+    margin-bottom: 110px;
+}
+
+#service_right {
+    margin-top: 55px;
+    margin-bottom: 110px;
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*                           section portfolio                             */
+/*-------------------------------------------------------------------------*/
+
+.section_portfolio {
+    padding: 200px 0 142px;
+}
+
+#portfolio_header {
+    max-width: 235px;
+}
+
+.group_img {
+    width: 382px;
+    padding: 6px;
+    position: relative;
+}
+
+.group_img img {
+    max-width: 100%;
+}
+
+.hover_content {
+    position: absolute;
+}
+
+.hover_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 97%;
+    height: 98%;
+    background-color: #faae53;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+
+.hover_content:hover {
+    opacity: .9;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*                           section portfolio                             */
+/*-------------------------------------------------------------------------*/
+
+
+.section_meet_avencer_experts {
+    padding: 150px 0;
+    background-image: url(../img/team%20background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#meet_avencer_experts_header {
+    max-width: 400px;
+}
+
+#margin_bottoma_in_meet_experts {
+    margin-bottom: 150px;
+}
+
+.expert_meet {
+    width: 370px;
+    position: relative;
+}
+
+.expert_meet img {
+    max-width: 100%;
+}
+
+#expert_meet_2 {
+    margin-top: 60px;
+}
+
+#expert_meet_3 {
+    margin-top: 120px;
+}
+
+.social_icon {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.social_icon li {
+	display: inline-block;
+	font-size: 20px;
+	letter-spacing: 0.8px;
+	height: 40px;
+	width: 40px;
+	border: 2px solid #faae53;
+	border-radius: 50%;
+	padding: 2px 10px;
+}
+
+.expert_hover {
+	position: absolute;
+	top: 30px;
+	left: 50px;
+}
+
+
+
+
+
