@@ -47,6 +47,7 @@ body {
     background-color: #29253d;
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #fefefe;
 }
@@ -136,6 +137,7 @@ body {
 
 .home_button:focus {
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -173,21 +175,29 @@ body {
 /*-------------------------------------------------------------------------*/
 
 
-.avencer_top_header_text {
-    margin-bottom: 120px;
-}
-
-.avencer_header_text {
+.page_title {
     font-family: "Montserrat-Medium";
     font-size: 32px;
     letter-spacing: 0.8px;
     position: relative;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 120px;
 }
 
-.avencer_header_text span {
+.page_title span {
     color: #faae53;
+}
+
+.page_title:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    border-top: 4px solid #faae53;
+    border-left: 4px solid #faae53;
+    height: 25px;
+    width: 25px;
 }
 
 /*-------------------------------------------------------------------------*/
@@ -202,16 +212,11 @@ body {
 .about_image {
     margin-top: 95px;
     float: right;
-}
-
-.about_imgae_img {
-    max-width: 648px;
     padding-right: 60px;
 }
 
 
 .about_text {
-    max-width: 470.45px;
     margin-top: 100px;
     float: left;
     padding-left: 60px;
@@ -222,6 +227,10 @@ body {
     font-size: 32px;
     letter-spacing: 0.8px;
     position: relative;
+}
+
+.section_about .page_title {
+    padding-right: 130px;
 }
 
 .about_text_header:before {
@@ -276,6 +285,7 @@ body {
 }
 
 .btn_small_in_about:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
 }
@@ -289,7 +299,6 @@ body {
     width: 33px;
     border-top: 2px solid #faae53;
     border-left: 2px solid #faae53;
-
 }
 
 
@@ -316,19 +325,8 @@ body {
     padding-top: 200px;
 }
 
-#service_avencer_header {
-    max-width: 335px;
-}
-
-.avencer_header_text:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -12px;
-    border-top: 4px solid #faae53;
-    border-left: 4px solid #faae53;
-    height: 25px;
-    width: 25px;
+.section_service_avencer .page_title {
+    max-width: 320px;
 }
 
 .service_logo {
@@ -345,10 +343,8 @@ body {
 
 
 #fast-delivery {
-    max-width: 77px;
-    height: 66px;
-    position: absolute;
-    left: 43px;
+	position: absolute;
+	left: 120px;
 }
 
 .service_of_avencer h3 {
@@ -360,6 +356,7 @@ body {
 }
 
 .service_of_avencer {
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -376,17 +373,15 @@ body {
     font-family: "Montserrat-Light";
 }
 
-#service_left {
-    margin-bottom: 110px;
-}
-
-#service_right {
+.service_itmes_right {
     margin-top: 55px;
-    margin-bottom: 110px;
+    padding-left: 90px;
 }
 
 
-
+.service_itmes_left {
+	padding-right: 90px;
+}
 /*-------------------------------------------------------------------------*/
 /*                           section portfolio                             */
 /*-------------------------------------------------------------------------*/
@@ -395,45 +390,66 @@ body {
     padding: 200px 0 142px;
 }
 
-#portfolio_header {
+.section_portfolio .page_title {
     max-width: 235px;
 }
 
-.group_img {
-    width: 382px;
-    padding: 6px;
-    position: relative;
+.portfolio_content .row .col-sm-4 {
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
-.group_img img {
-    max-width: 100%;
+.portfolio_items {
+    margin: 6px 0;
+    position: relative;
+
+}
+
+.portfolio_items img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hover_content {
     position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(250, 174, 83, 0.8);
 }
 
-.hover_content {
+.portfolio_items:hover .hover_content {
+    opacity: 0.8;
+}
+
+.hover_content h4, 
+.hover_content p {
+    font-family: "Montserrat-Medium";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    width: 97%;
-    height: 98%;
-    background-color: #faae53;
-    margin: 0 auto;
-    transition: all 0.5s;
+    text-align: center;
+    color: #29253d;
 }
 
+.hover_content h4 {
+    font-size: 24px;
+    padding-bottom: 40px;
+}
 
-.hover_content:hover {
-    opacity: .9;
+.hover_content p {
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 
 /*-------------------------------------------------------------------------*/
-/*                           section portfolio                             */
+/*                     section meet avencer experts                        */
 /*-------------------------------------------------------------------------*/
 
 
@@ -445,22 +461,16 @@ body {
     background-size: cover;
 }
 
-#meet_avencer_experts_header {
-    max-width: 400px;
-}
-
-#margin_bottoma_in_meet_experts {
-    margin-bottom: 150px;
+.section_meet_avencer_experts .page_title {
+    max-width: 380px;
 }
 
 .expert_meet {
-    width: 370px;
-    position: relative;
+    
 }
 
-.expert_meet img {
-    max-width: 100%;
-}
+
+
 
 #expert_meet_2 {
     margin-top: 60px;
@@ -470,29 +480,102 @@ body {
     margin-top: 120px;
 }
 
+
+
+
+.expert_meet_content {
+    position: relative;
+   
+}
+
+.expert_meet_hover {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(250, 174, 83, 0.9);
+	padding-left: 40px;
+	height: 100%;
+	padding-top: 30px;
+}
+
+.expert_meet_content:hover .expert_meet_hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+.expert_meet_hover h4,
+.expert_meet_hover p {
+    font-family: "Montserrat-Medium";
+    position: absolute;
+    color: #29253d;
+}
+
+.expert_meet_hover h4 {
+    font-size: 24px;
+    padding-bottom: 40px;
+
+}
+
+.expert_meet_hover p:before {
+	content: "";
+	position: absolute;
+	width: 40px;
+	border: 1px solid #ffffff;
+	left: 0;
+	top: -10px;
+}
+
+.expert_meet_hover p {
+    font-size: 16px;
+    margin-top: 60px;
+}
+
 .social_icon {
-    list-style: none;
-    margin-left: -40px;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 110px;
 }
 
 .social_icon li {
-	display: inline-block;
-	font-size: 20px;
-	letter-spacing: 0.8px;
-	height: 40px;
-	width: 40px;
-	border: 2px solid #faae53;
-	border-radius: 50%;
-	padding: 2px 10px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #2f293e;
+    border-radius: 50%;
+    padding: 2px 10px;
+    margin-right: 10px;
+    transition: all 0.2s;
 }
 
-.expert_hover {
-	position: absolute;
-	top: 30px;
-	left: 50px;
+.social_icon li a {
+    text-decoration: none;
+    color: #2f293e;
+}
+.fb_left {
+	padding-left: 3px;
 }
 
+.instagram_left {
+	margin-left: -1px;
+}
 
+.social_icon li:hover {
+    border-color: #fafafa;
+    cursor: pointer;
+}
 
 
 
