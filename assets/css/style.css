@@ -618,10 +618,13 @@ body {
 }
 
 .contact_avencer .page_title {
-	float: left;
-	margin-top: 100px;
+    float: left;
+    margin-top: 100px;
 }
 
+/*************************************/
+/*             map image             */
+/*************************************/
 
 .map_img {
     background-image: url(../img/map%20.png);
@@ -636,39 +639,28 @@ body {
 }
 
 .map_indicator {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
+
+/*************************************/
+/*          contact section          */
+/*************************************/
 .contact_avencer {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .contact_avencer .row .page_title {
-	margin-bottom: 108px;
-	left: 80px;
+    margin-bottom: 108px;
+    left: 80px;
 }
 
 .address_contact {
     text-align: center;
-}
-
-.address_contact h3, p {
-    font-family: "Montserrat-Regular";
-    letter-spacing: 0.8px;
-}
-
-.address_contact h3 {
-	font-size: 20px;
-	line-height: 40px;
-}
-
-.address_contact p {
-	font-size: 16px;
-	opacity: 0.6;
-	line-height: 30px;
 }
 
 .contact_logo {
@@ -677,16 +669,35 @@ body {
     font-size: 40px;
 }
 
+.address_contact h3,
+p {
+    font-family: "Montserrat-Regular";
+    letter-spacing: 0.8px;
+}
+
+.address_contact h3 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.address_contact p {
+    font-size: 16px;
+    opacity: 0.6;
+    line-height: 30px;
+}
+
 .contact_avencer .address_contact {
-	margin-bottom: 120px;
+    margin-bottom: 120px;
 }
 
 .divider_line_styles {
-	border-right: 1px solid #faae53;
+    border-right: 1px solid #faae53;
     padding-right: 15px;
 }
 
-
+/*************************************/
+/*    contact section input from     */
+/*************************************/
 
 
 .contact_avencer_wrapper input {
@@ -698,14 +709,15 @@ body {
     border-radius: 0;
     color: white;
     opacity: 0.7;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
-.contact_avencer_wrapper textarea{
-	outline: none;
-	border: none;
-	background: transparent;
-	padding-left: 0;
+.contact_avencer_wrapper textarea {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 0;
 }
 
 .contact_avencer_wrapper .form-control:focus,
@@ -713,6 +725,7 @@ body {
     background-color: transparent;
     border-color: #faae53;
     outline: 0;
+    -webkit-box-shadow: none;
     box-shadow: none;
     opacity: 1;
     color: white;
@@ -722,18 +735,24 @@ body {
     padding: 0 40px;
 }
 
+/*************************************/
+/*      contact section button       */
+/*************************************/
 .button_in_map {
-	float: right;
-	margin-right: 45px;
-	margin-bottom: 100px;
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 100px;
 }
-
 
 
 /*-------------------------------------------------------------------------*/
 /*                              footer wrapper                             */
 /*-------------------------------------------------------------------------*/
 
+
+/*************************************/
+/*           footer icons            */
+/*************************************/
 .footer_icons {
     list-style: none;
     padding: 70px 0 30px;
@@ -741,22 +760,23 @@ body {
 }
 
 .footer_icons li {
-     display: inline-block; 
-    padding: 0 5px; 
+    display: inline-block;
+    padding: 0 5px;
 }
 
 .footer_icons a {
-	text-decoration: none;
-	border: 1px solid #faae53;
-	font-size: 20px;
-	color: #faae53;
-	display: block;
-	height: 50px;
-	width: 50px;
-	text-align: center;
-	line-height: 50px;
-	border-radius: 50%;
+    text-decoration: none;
+    border: 1px solid #faae53;
+    font-size: 20px;
+    color: #faae53;
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
     opacity: 0.5;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -764,11 +784,15 @@ body {
     opacity: 1;
 }
 
+
+/*************************************/
+/*             footer text           */
+/*************************************/
 .footer_text {
-	color: #faae53;
-	font-size: 14px;
-	font-family: "Montserrat-Light";
-	text-align: center;
+    color: #faae53;
+    font-size: 14px;
+    font-family: "Montserrat-Light";
+    text-align: center;
     margin-bottom: 60px;
 }
 
@@ -777,6 +801,7 @@ body {
     text-decoration: none;
     color: #faae53;
     background-color: transparent;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
