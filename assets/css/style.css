@@ -610,5 +610,121 @@ body {
 }
 
 /*-------------------------------------------------------------------------*/
-/*                     reuseable header top with span                      */
+/*                      Get Contact avencer wrapper                        */
 /*-------------------------------------------------------------------------*/
+
+.contact_avencer_wrapper {
+    background-color: #453e69;
+}
+
+.contact_avencer .page_title {
+	float: left;
+	margin-top: 100px;
+}
+
+
+.map_img {
+    background-image: url(../img/map%20.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map_image_position {
+    position: relative;
+    height: auto;
+}
+
+.map_indicator {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contact_avencer {
+	margin: 0 auto;
+}
+
+.contact_avencer .row .page_title {
+	margin-bottom: 108px;
+	left: 80px;
+}
+
+.address_contact {
+    text-align: center;
+}
+
+.address_contact h3, p {
+    font-family: "Montserrat-Regular";
+    letter-spacing: 0.8px;
+}
+
+.address_contact h3 {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.address_contact p {
+	font-size: 16px;
+	opacity: 0.6;
+	line-height: 30px;
+}
+
+.contact_logo {
+    margin-bottom: 30px;
+    color: #faae53;
+    font-size: 40px;
+}
+
+.contact_avencer .address_contact {
+	margin-bottom: 120px;
+}
+
+.divider_line_styles {
+	border-right: 1px solid #faae53;
+    padding-right: 15px;
+}
+
+
+
+
+.contact_avencer_wrapper input {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 0;
+    border-bottom: 1px solid #faae53;
+    border-radius: 0;
+    color: white;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.contact_avencer_wrapper textarea{
+	outline: none;
+	border: none;
+	background: transparent;
+	padding-left: 0;
+}
+
+.contact_avencer_wrapper .form-control:focus,
+.contact_avencer_wrapper .form-control:hover {
+    background-color: transparent;
+    border-color: #faae53;
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+    color: white;
+}
+
+.from_custom_padd {
+    padding: 0 40px;
+}
+
+.button_in_map {
+	float: right;
+	margin-right: 45px;
+	margin-bottom: 100px;
+}
+
