@@ -16,6 +16,11 @@
         left: -5px;
     }
 
+    .contact_avencer .row .page_title {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
     /*----------------home page responsive css------------------*/
 
 
@@ -99,6 +104,10 @@
     .service_logo .fast-delivery {
         left: 60px;
     }
+    
+    .service_itmes_padding_right {
+    padding-right: 15px;
+}
 
     /*-------------portfolio_wrapper--------------------*/
 
@@ -116,14 +125,6 @@
     /*-----------contact_avencer .row .page_title---------------*/
 
     .contact_avencer .row .page_title {
-        left: 0;
-    }
-
-    section.contact_avencer_wrapper .page_title:before {
-        left: 55px;
-    }
-
-    .contact_avencer .row .page_title {
         margin-bottom: 60px;
     }
 
@@ -134,6 +135,10 @@
     .contact_avencer .address_contact {
         margin-bottom: 75px;
     }
+    
+    .contact_avencer .page_title:before {
+    left: 40px;
+}
 
     .from_custom_padd {
         padding: 0 10px;
@@ -142,5 +147,111 @@
     .button_in_map {
         margin-bottom: 50px;
         margin-top: 0;
+        float: left;
+        margin-left: 10px;
     }
+    
+   
+}
+
+@media (max-width:440px) {
+    .about_image {
+        padding-right: 0;
+    }
+
+    .about_wrapper .page_title {
+        padding-right: 0;
+    }
+
+    .about_wrapper .page_title:before {
+        left: 40px;
+    }
+
+    .service_itmes_padding_left {
+        padding-left: 15px;
+    }
+
+    .service_logo {
+        margin: 0 auto;
+    }
+
+    .service_logo .fast-delivery {
+        left: 170px;
+    }
+
+    .service_of_avencer {
+        text-align: center;
+    }
+
+    .about_text_p {
+        text-align: center;
+    }
+
+    .btn_small_in_about {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+    .meet_expert_wrapper .page_title:before {
+        left: 0;
+    }
+
+    .expert_meet_person_2 {
+        margin-top: 0;
+    }
+
+    .expert_meet_person_3 {
+        margin-top: 0;
+    }
+
+    .button_in_map {
+        margin-left: 0;
+    }
+
+    .divider_line_styles {
+        border-right: none;
+        padding-right: 0;
+    }
+
+
+    .expert_img_I_p_6 {
+        width: 100%;
+    }
+}
+
+@media (max-width:420px) {
+
+    .meet_expert_wrapper .page_title:before {
+        left: 40px;
+    }
+
+
+    .service_logo_img.fast-delivery {
+        left: 170px;
+    }
+    
+    .contact_avencer .page_title:before {
+    left: -11px;
+}
+    
+    .meet_expert_wrapper .page_title:before {
+     left: 0; 
+}
+
+}
+
+
+@media (max-width:380px) {
+    .service_logo_img.fast-delivery {
+        left: 150px;
+    }
+
+    section.contact_avencer_wrapper .page_title:before {
+        left: 55px;
+    }
+    
+        .meet_expert_wrapper .page_title:before {
+     left: 40px; 
+}
 }
