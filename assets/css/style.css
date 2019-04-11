@@ -200,7 +200,6 @@ body {
     letter-spacing: 0.8px;
     position: relative;
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 120px;
 }
 
@@ -251,9 +250,11 @@ body {
     padding-left: 60px;
 }
 
+/*
 .about_wrapper .page_title {
     padding-right: 130px;
 }
+*/
 
 .content_and_button {
     font-family: "Montserrat-Light";
@@ -394,11 +395,6 @@ body {
     padding: 0px 10px;
 }
 
-
-.service_logo .fast-delivery {
-    position: absolute;
-    left: 120px;
-}
 
 .service_itmes_padding_left {
     margin-top: 55px;
@@ -809,14 +805,3 @@ p {
     background-color: #faae53;
     color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -9,15 +9,18 @@
 /*************************************/
 
 @media (max-width:767px) {
-
+    .page_title {
+        text-align: center;
+    }
 
     .page_title:before {
-        top: -5px;
-        left: -5px;
+        top: -10px;
+        left: -10px;
     }
 
     .contact_avencer .row .page_title {
         left: 50%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
     }
 
@@ -67,8 +70,15 @@
         padding-top: 10px;
     }
 
+    .about_wrapper .row figure {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+
     .about_image {
-        padding-right: 40px;
+        padding-right: 0;
     }
 
     .about_text {
@@ -86,6 +96,21 @@
 
     /*--------------service_avencer_wrapper--------------*/
 
+    .service_avencer_wrapper .row figure {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .service_avencer_wrapper .page_title {
+        max-width: 100%;
+    }
+
+    .service_logo {
+        margin: 0 auto;
+    }
 
     .service_avencer_wrapper {
         padding-bottom: 60px;
@@ -101,13 +126,9 @@
         padding-left: 30px;
     }
 
-    .service_logo .fast-delivery {
-        left: 60px;
-    }
-    
     .service_itmes_padding_right {
-    padding-right: 15px;
-}
+        padding-right: 15px;
+    }
 
     /*-------------portfolio_wrapper--------------------*/
 
@@ -115,14 +136,47 @@
         padding: 80px 0 100px;
     }
 
+    .portfolio_content .col-sm-4 {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
 
 
     /*--------------- meet_expert_wrapper------------------ */
+
+    .meet_expert_wrapper .row figure {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+
     .meet_expert_wrapper {
         padding: 90px 0;
     }
 
+    .expert_img_I_p_6 {
+        width: 100%;
+    }
+
+    .expert_meet_person_2 {
+        margin-top: 0;
+    }
+
+    .expert_meet_person_3 {
+        margin-top: 0;
+    }
+
     /*-----------contact_avencer .row .page_title---------------*/
+
+    .col-sm-6.map_img {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
 
     .contact_avencer .row .page_title {
         margin-bottom: 60px;
@@ -135,23 +189,25 @@
     .contact_avencer .address_contact {
         margin-bottom: 75px;
     }
-    
-    .contact_avencer .page_title:before {
-    left: 40px;
-}
 
-    .from_custom_padd {
-        padding: 0 10px;
+    .contact_avencer .page_title:before {
+        left: 40px;
+    }
+
+    .form-group.col-sm-6 {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
     }
 
     .button_in_map {
         margin-bottom: 50px;
         margin-top: 0;
-        float: left;
         margin-left: 10px;
     }
-    
-   
+
+
 }
 
 @media (max-width:440px) {
@@ -175,10 +231,6 @@
         margin: 0 auto;
     }
 
-    .service_logo .fast-delivery {
-        left: 170px;
-    }
-
     .service_of_avencer {
         text-align: center;
     }
@@ -189,6 +241,7 @@
 
     .btn_small_in_about {
         left: 50%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
     }
 
@@ -215,9 +268,6 @@
     }
 
 
-    .expert_img_I_p_6 {
-        width: 100%;
-    }
 }
 
 @media (max-width:420px) {
@@ -226,32 +276,24 @@
         left: 40px;
     }
 
-
-    .service_logo_img.fast-delivery {
-        left: 170px;
-    }
-    
     .contact_avencer .page_title:before {
-    left: -11px;
-}
-    
+        left: -11px;
+    }
+
     .meet_expert_wrapper .page_title:before {
-     left: 0; 
-}
+        left: 0;
+    }
 
 }
 
 
 @media (max-width:380px) {
-    .service_logo_img.fast-delivery {
-        left: 150px;
-    }
 
     section.contact_avencer_wrapper .page_title:before {
         left: 55px;
     }
-    
-        .meet_expert_wrapper .page_title:before {
-     left: 40px; 
-}
+
+    .meet_expert_wrapper .page_title:before {
+        left: 40px;
+    }
 }
