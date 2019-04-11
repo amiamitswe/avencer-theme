@@ -631,6 +631,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 300px;
 }
 
 .map_image_position {
@@ -809,3 +810,14 @@ p {
     background-color: #faae53;
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+

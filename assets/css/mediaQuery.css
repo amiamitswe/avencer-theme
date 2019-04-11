@@ -1,0 +1,146 @@
+/*-------------------------------------------------------------------------*/
+/*                               Media Queries                             */
+/*-------------------------------------------------------------------------*/
+
+
+
+/*************************************/
+/*           max-width: 776px        */
+/*************************************/
+
+@media (max-width:767px) {
+
+
+    .page_title:before {
+        top: -5px;
+        left: -5px;
+    }
+
+    /*----------------home page responsive css------------------*/
+
+
+    .logo_image_img {
+        margin: 0;
+    }
+
+    .logo_img {
+        max-width: 130px;
+        padding-top: 15px;
+    }
+
+    .nav_bar {
+        top: 60px;
+        right: 25px;
+    }
+
+    .nav_bar_logo {
+        max-width: 40px;
+    }
+
+    .header_text__text {
+        margin-top: 100px;
+    }
+
+    .banner_text {
+        margin-bottom: 80px;
+    }
+
+    .home_button {
+        margin-bottom: 50px;
+    }
+
+    .page_scroll {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*----------------about_wrapper responsive css----------------*/
+
+    .about_wrapper {
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+
+    .about_image {
+        padding-right: 40px;
+    }
+
+    .about_text {
+        padding-left: 0;
+    }
+
+    .page_title {
+        margin-bottom: 60px;
+    }
+
+    .content_and_button {
+        padding-left: 0px;
+    }
+
+
+    /*--------------service_avencer_wrapper--------------*/
+
+
+    .service_avencer_wrapper {
+        padding-bottom: 60px;
+        padding-top: 90px;
+    }
+
+    .service_itmes_padding_right {
+        padding-right: 30px;
+    }
+
+    .service_itmes_padding_left {
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+
+    .service_logo .fast-delivery {
+        left: 60px;
+    }
+
+    /*-------------portfolio_wrapper--------------------*/
+
+    .portfolio_wrapper {
+        padding: 80px 0 100px;
+    }
+
+
+
+    /*--------------- meet_expert_wrapper------------------ */
+    .meet_expert_wrapper {
+        padding: 90px 0;
+    }
+
+    /*-----------contact_avencer .row .page_title---------------*/
+
+    .contact_avencer .row .page_title {
+        left: 0;
+    }
+
+    section.contact_avencer_wrapper .page_title:before {
+        left: 55px;
+    }
+
+    .contact_avencer .row .page_title {
+        margin-bottom: 60px;
+    }
+
+    .contact_avencer .page_title {
+        margin-top: 70px;
+    }
+
+    .contact_avencer .address_contact {
+        margin-bottom: 75px;
+    }
+
+    .from_custom_padd {
+        padding: 0 10px;
+    }
+
+    .button_in_map {
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+}
